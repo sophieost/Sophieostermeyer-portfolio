@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos de moi"
+				tagline="Je suis Sophie, Développeuse Web Junior et c'est ici que je vous parle de mon parcours.."
+			>
+				<img
+					width="300"
+					height="100"
+					src="/assets/at-work.jpg"
+					alt="Sophie Ostermeyer"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>Après deux années en licence de psychologie et un CAP et un BP de coiffure, j’ai effectué plusieurs années dans le domaine de la coiffure ce qui m’a permis d’acquérir de très bonnes compétences telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles importantes. J'ai ensuite voulu me reconvertir professionnellement dans le Développement Web, domaine qui m’intéressait depuis de nombreuses années.
+					</p>
+					<p>
+						Je suis actuellement une formation chez Colombbus en vue d'obtenir le titre developpeur web/web mobile (Bac+2). J'ai déjà acquis des compétences en HTML, CSS, JavaScript et PHP, me permettant de créer des applications web dynamiques.
+					</p>
+					<p>
+						Au cours de ma formation, j’ai eu l’opportunité de créer et d’héberger un site WordPress : quatorze.org. Cette expérience m’a permis de me familiariser avec l’utilisation de ce CMS populaire et de mieux comprendre le référencement naturel (SEO). J’ai également eu l’occasion de développer un site e-commerce en utilisant HTML, CSS, JavaScript, Bootstrap et PHP. Ces projets m’ont permis d’acquérir une expérience pratique précieuse et de renforcer mes compétences en développement web. Chaque projet a été une occasion d’apprendre et de grandir en tant que développeur.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diplômes</h2>
+				<div class="content">
+					<p>BAC+2 Developpeur web / web mobile, titre RNCP (en cours)</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>Curieuse, Créative, Autonome, Organisée, Polyvalente, Travail d'équipe, Souci du détail</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
