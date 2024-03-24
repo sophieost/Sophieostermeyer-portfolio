@@ -1,8 +1,26 @@
-import { c as createAstro, d as createComponent, r as renderTemplate, g as renderComponent, m as maybeRenderHead } from '../astro_CEALGWPi.mjs';
+import { c as createAstro, d as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderSlot, g as renderComponent } from '../astro_B3i_CdwK.mjs';
 import 'kleur/colors';
-import { b as $$Hero, a as $$BaseLayout } from './404_Cetk-_xk.mjs';
-import { $ as $$ContactCTA } from './__CfjJ2wPo.mjs';
+import { $ as $$Icon, a as $$Hero, b as $$BaseLayout } from './404_CGHpHZrm.mjs';
+import 'clsx';
 /* empty css                          */
+/* empty css                          */
+
+const $$Astro$2 = createAstro();
+const $$CallToAction = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  Astro2.self = $$CallToAction;
+  const { href } = Astro2.props;
+  return renderTemplate`${maybeRenderHead()}<a${addAttribute(href, "href")} data-astro-cid-balv45lp>${renderSlot($$result, $$slots["default"])}</a> `;
+}, "C:/Users/Terrage-04/portfolio/src/components/CallToAction.astro", void 0);
+
+const $$Astro$1 = createAstro();
+const $$ContactCTA = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$ContactCTA;
+  return renderTemplate`${maybeRenderHead()}<aside data-astro-cid-rcdzuq3a> <h2 data-astro-cid-rcdzuq3a>Envie de travailler avec moi?</h2> ${renderComponent($$result, "CallToAction", $$CallToAction, { "href": "mailto:ostermeyer75@gmail.com.com", "data-astro-cid-rcdzuq3a": true }, { "default": ($$result2) => renderTemplate`
+Ecrivez moi
+${renderComponent($$result2, "Icon", $$Icon, { "icon": "paper-plane-tilt", "size": "1.2em", "data-astro-cid-rcdzuq3a": true })} ` })} </aside> `;
+}, "C:/Users/Terrage-04/portfolio/src/components/ContactCTA.astro", void 0);
 
 const $$Astro = createAstro();
 const $$About = createComponent(async ($$result, $$props, $$slots) => {
@@ -19,4 +37,11 @@ Au cours de ma formation, j’ai eu l’opportunité de créer et d’héberger 
 const $$file = "C:/Users/Terrage-04/portfolio/src/pages/about.astro";
 const $$url = "/about";
 
-export { $$About as default, $$file as file, $$url as url };
+const about = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$About,
+	file: $$file,
+	url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { $$CallToAction as $, $$ContactCTA as a, about as b };

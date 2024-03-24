@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./la-montagne_D4vvOvJu.mjs');
+						return import('./quatorze_B4XuuiIP.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

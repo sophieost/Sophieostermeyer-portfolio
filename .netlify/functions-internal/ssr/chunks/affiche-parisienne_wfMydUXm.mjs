@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./quatorze_D91nF4Zw.mjs');
+						return import('./affiche-parisienne_Bh12M4r4.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

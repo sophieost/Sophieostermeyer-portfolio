@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./affiche-parisienne_X7zCLbrO.mjs');
+						return import('./minimo_BUbAOoM9.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

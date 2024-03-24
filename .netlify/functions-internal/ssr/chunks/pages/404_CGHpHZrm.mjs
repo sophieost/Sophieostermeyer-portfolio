@@ -1,4 +1,4 @@
-import { c as createAstro, d as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderSlot, s as spreadAttributes, u as unescapeHTML, g as renderComponent, h as renderHead } from '../astro_CEALGWPi.mjs';
+import { c as createAstro, d as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderSlot, s as spreadAttributes, u as unescapeHTML, g as renderComponent, h as renderHead } from '../astro_B3i_CdwK.mjs';
 import 'kleur/colors';
 import 'clsx';
 /* empty css                          */
@@ -158,4 +158,4 @@ const _404 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { $$Icon as $, _404 as _, $$BaseLayout as a, $$Hero as b };
+export { $$Icon as $, _404 as _, $$Hero as a, $$BaseLayout as b };

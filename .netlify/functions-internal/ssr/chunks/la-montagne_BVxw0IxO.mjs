@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./minimo_CHEmNAVK.mjs');
+						return import('./la-montagne_D-v4LcBG.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

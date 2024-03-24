@@ -1,5 +1,5 @@
 import { isRemotePath, joinPaths } from '@astrojs/internal-helpers/path';
-import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, a as UnsupportedImageConversion, b as MissingSharp } from '../astro_CEALGWPi.mjs';
+import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, a as UnsupportedImageConversion, b as MissingSharp } from '../astro_B3i_CdwK.mjs';
 
 const VALID_SUPPORTED_FORMATS = [
   "jpeg",
